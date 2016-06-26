@@ -1,0 +1,61 @@
+#footer {
+	width: 100%;
+	height: auto;	
+	>div {
+		width: 80%;
+		margin: 0 auto;
+		text-align: center;
+		color: #ccc;
+		line-height: 24/@width;
+	}
+	ul {
+		overflow: hidden;
+		margin-top: 10/@width;
+		background-color: #fff;
+		padding-top: 10/@width;
+		li {
+			float: left;
+			width: (100%/3)-1;
+			padding: 0 24/@width 5/@width;
+			a {
+				display: block;
+				width: 100%;
+				height: auto;
+			}
+			i {
+				margin: 0 auto; 
+				width: 46/@width;
+				height: 51/@width;
+				display: block;
+				background-repeat: no-repeat;
+				background-size: cover;
+				background-position: center center;
+				background-image: url(../images/home.png); 
+			}
+			span {
+				display: block;
+				margin-top: 10/@width;
+				width: 100%;
+				color: #aaa;
+				text-align: center;
+
+			}
+			:nth-child(1) {
+				padding-left: 10/@width;
+			}
+		}
+		:nth-child(2) {
+			padding: 0 24/@width;
+			i { 
+				width: 51/@width;
+				background-image: url(../images/about.png);
+			}
+		}
+		:nth-child(3) {
+			padding: 0 24/@width;
+			i { 
+				background-image: url(../images/telme.png);
+			}
+		}
+	}
+}

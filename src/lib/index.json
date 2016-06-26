@@ -1,0 +1,18 @@
+[
+	{
+	 	"url" : "detail1",
+	 	"src": "./images/baner04.png"
+	},
+	{
+	 	"url" : "detail3",
+	 	"src": "./images/baner03.png"
+	},
+	{
+	 	"url" : "detail1",
+	 	"src": "./images/baner01.png"
+	},
+	{
+	 	"url" : "detail4",
+	 	"src": "./images/baner02.png"
+	}
+]

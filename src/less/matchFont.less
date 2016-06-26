@@ -1,0 +1,91 @@
+@import 'component/sty';
+
+
+div {
+    font-size: 12px; // 默认写上dpr为1的fontSize
+}
+h2 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 16px;
+}
+span {
+	font-size: 12px;
+}
+.head {
+  img {
+      padding-top:32/@width;
+    }
+}
+.head-left {
+    img {
+        padding-top: 25/@width;
+	}
+}
+.img span {
+	padding: 4px 10px;
+	transform: scale(0.8); 
+	text-transform: scale(0.8);
+	transform-origin: center center;
+}	
+
+[data-dpr="2"] {
+
+	div {
+    	font-size: 24px;
+	}
+	h2 {
+		font-size: 34px;
+	}
+	h3 {
+		font-size: 30px;
+	}
+	span {
+		font-size: 24px;
+	}
+	.head-main {
+      padding-top: 6/@width;
+    }
+    .img span {
+		padding: 6px 20px;
+		transform: scale(1); 
+		text-transform: scale(1);
+	}	
+
+}
+
+[data-dpr="3"] {
+	div {
+	    font-size: 36px;
+	}
+	h2 {
+		font-size: 40px;
+	}
+	h3 {
+		font-size: 38px;
+	}
+
+	span {
+		font-size: 20px;
+	}
+	.head-main {
+    	padding-top: 10/@width;
+    }
+    .head {
+      img {
+          padding-top: 40/@width;
+          width: 45%;
+        }
+    }
+    .head-left {
+      img {
+          padding-top: 30/@width;
+        }
+    }
+    .img span {
+		padding: 8px 20px;
+		transform: scale(1); 
+		text-transform: scale(1);
+	}
+}

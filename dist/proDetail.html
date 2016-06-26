@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>中现众合</title>
+		<meta charset="UTF-8">
+		<meta name="author" content="www.zxpeve.com">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta name="msapplication-tap-highlight" content="no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+		<link rel="stylesheet" href="css/proDetail.css">
+		<link rel="stylesheet" href="css/proDetailMatchFont.css">
+	</head>
+	<body id="proDatailPage">
+		<div class="main"> 
+			<header>
+				<div class="head-main">
+					<a href="./index.html" class="logo"><img id="logo" src="./images/logo.png" alt="中现众合"></a>
+				</div>
+				<div class="head-right"><a id="plus" class="head" href="javaScript:void(0)"><img src="./images/list.png"></a></div>
+				<div class="head-left"><a class="head rig" target="_self" href="#"><img src="./images/self.png"></a></div>
+
+			</header>
+			
+			<section id="proDetail">
+
+				<div class="img">
+					<a href="detaile/{{projectData.id}}" v-bind:style="{ backgroundImage:'url(' +projectData.src+ ')' }">
+				</a></div>
+				<div class="tit">
+					<a href="detail{{ projectData.id }}"><h2>{{ projectData.tit }}</h2></a>
+					<div>已筹：{{ projectData.raise }}</div>
+					
+				</div>
+				<div class="ref">
+				{{ projectData.refer | length  }}</div>
+				<div class="progress"></div>
+				<ul class="bott">
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+
+			</section>
+			<section id="proIntro">
+				
+				<h4>项目介绍</h4>
+				<div class="proImg">
+					<img src="images/proDetail.jpg">
+				</div>
+			</section>
+			<section id="loadmore">
+				<div class="text" v-if="addmore">上划加载更多</div>
+				<div class="sk-circle" v-else>
+			        <div class="sk-circle1 sk-child"></div>
+			        <div class="sk-circle2 sk-child"></div>
+			        <div class="sk-circle3 sk-child"></div>
+			        <div class="sk-circle4 sk-child"></div>
+			        <div class="sk-circle5 sk-child"></div>
+			        <div class="sk-circle6 sk-child"></div>
+			        <div class="sk-circle7 sk-child"></div>
+			        <div class="sk-circle8 sk-child"></div>
+			        <div class="sk-circle9 sk-child"></div>
+			        <div class="sk-circle10 sk-child"></div>
+			        <div class="sk-circle11 sk-child"></div>
+			        <div class="sk-circle12 sk-child"></div>
+			    </div>
+			</section>
+			
+			<footer>
+				<div class="copyright">我是版权信息我是版权信息我是版权信息我是版权信息我是版权信息</div>
+				<div></div>
+			</footer>
+		</div>
+		<script src="./js/commenVue.js"></script>
+		<script src="./js/proDetail.js"></script>
+	</body>
+</html>

@@ -1,0 +1,77 @@
+@import 'component/sty';
+
+
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+html,body{
+    width:100%;
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"microsoft yahei",Arial;
+    color: @fontcolor;
+    background:@bgcolor;
+}
+
+em,p,span,ul,li,ol,h1,h2,h3,h4,input,textarea{
+    margin:0;
+    padding:0;
+    font-weight:normal;
+    list-style:none;
+    font-style:normal;
+}
+
+
+
+input,textarea,select{
+    border:none;
+    outline:none/*;-webkit-user-modify:read-write-plaintext-only*/
+}
+
+textarea{resize:none}
+
+img{border:none;vertical-align:middle}
+
+a{outline-style:none;text-decoration:none}
+
+a:active {
+    color: @color-act;
+}
+header,section,article,aside,footer{display: block}
+
+.main {
+    touch-action:auto!important;
+    -webkit-user-select: auto!important;
+    -webkit-user-drag: auto!important;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+
+
+
+
+
+
+
+
+
+@import 'component/header';
+@import 'component/baner';
+@import 'component/product';
+@import 'component/addmore';
+@import 'component/footer';
+@import 'component/aside';
+
+@import 'component/matchFont';
+
+
+
+
+
+
